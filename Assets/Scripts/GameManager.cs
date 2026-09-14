@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
             playerMovement.enabled = false;
         }
 
-        loseScreen.SetActive(true);
+        loseScreen.SetActive(true);//unhides the Lose panel and text on the canvas.
     }
 
     public void StopTimer()
