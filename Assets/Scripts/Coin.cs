@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager gameManager = FindFirstObjectByType<GameManager>();
+            GameManager gameManager = FindFirstObjectByType<GameManager>();// locate and return the first active, loaded instance of the GameManager script in the current scene.
 
             if (gameManager != null)
             {
