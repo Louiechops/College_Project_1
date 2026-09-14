@@ -17,7 +17,7 @@ public class KeyLock : MonoBehaviour
         }
 
         //Shows the win screen
-        winScreen.SetActive(true);
+        winScreen.SetActive(true);//unhides the win panel and text on the canvas.
 
         Debug.Log("You win!");
     }
@@ -29,7 +29,7 @@ public class KeyLock : MonoBehaviour
 
         if(other.CompareTag("Player") && KeyPickup.hasKey)
         {
-            WinGame();
+            WinGame();//Calls the win game void WinGame()
         }
     }
 }
