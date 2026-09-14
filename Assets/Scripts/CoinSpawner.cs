@@ -7,8 +7,8 @@ public class CoinSpawner : MonoBehaviour
     public GameObject coinPrefab;
     
     [Header("Spawn Timer")]
-    public float minSpawnTime = 10f;
-    public float maxSpawnTime = 20f;
+    public float minSpawnTime = 5f;
+    public float maxSpawnTime = 10f;
 
     [Header("Spawn Points")]// Organize script fields in inspector
     public Transform[] spawnPoints;
@@ -41,11 +41,7 @@ public class CoinSpawner : MonoBehaviour
         Transform spawnPoint = spawnPoints[randomIndex];
 
         // Spawn the coin
-        Instantiate(
-            coinPrefab,
-            spawnPoint.position,
-            Quaternion.identity 
-        );
+        Instantiate(coinPrefab, spawnPoint.position, Quaternion.identity);
     }
 }
 
