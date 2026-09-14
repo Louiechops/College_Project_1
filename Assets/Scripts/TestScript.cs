@@ -5,7 +5,7 @@ public class TestScript : MonoBehaviour
 {
 	public Rigidbody2D RB;
 	public float Speed = 5;
-	public int score = 0;
+
 
 	void Update()
 	{
@@ -29,6 +29,27 @@ public class TestScript : MonoBehaviour
 		if (Keyboard.current.downArrowKey.isPressed) 
 		{
 			vel.y = -Speed;		
+		}
+
+
+		if (Keyboard.current.dKey.isPressed)
+		{
+			vel.x = Speed;
+		}
+
+		if (Keyboard.current.aKey.isPressed)
+		{
+			vel.x = -Speed;
+		}
+
+		if (Keyboard.current.wKey.isPressed)
+		{
+			vel.y = Speed;
+		}
+
+		if (Keyboard.current.sKey.isPressed)
+		{
+			vel.y = -Speed;
 		}
 
 		RB.linearVelocity = vel;
