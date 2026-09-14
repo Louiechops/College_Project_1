@@ -6,7 +6,7 @@ public class TestScript : MonoBehaviour
 	public Rigidbody2D RB;
 	public float Speed = 5;
 
-
+//when you press either an arrow key or WASD the player starts to move.
 	void Update()
 	{
 		Vector2 vel = new Vector2(0, 0);
