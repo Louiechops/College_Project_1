@@ -8,7 +8,7 @@ public class KeyPickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player"))//Checks to see if what collided with the key object has the player Tag
         {
             hasKey = true;
             //adds 30 secs
@@ -17,7 +17,7 @@ public class KeyPickup : MonoBehaviour
             // Remove the key from the map
             gameObject.SetActive(false);
 
-            Debug.Log("Key collected!");
+            
         }
     }
 }
